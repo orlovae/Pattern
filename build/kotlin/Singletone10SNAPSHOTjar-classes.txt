@@ -1,0 +1,1 @@
+/home/alex/IdeaProjects/Singletone/build/classes/kotlin/main/MainKt.class:/home/alex/IdeaProjects/Singletone/build/classes/kotlin/main/Singleton$Companion.class:/home/alex/IdeaProjects/Singletone/build/classes/kotlin/main/Singleton.class
