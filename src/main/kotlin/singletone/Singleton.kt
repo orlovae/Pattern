@@ -1,3 +1,5 @@
+package singletone
+
 class Singleton private constructor(private val value: String){
     companion object {
         private var instance: Singleton? = null
