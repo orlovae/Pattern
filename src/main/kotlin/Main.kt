@@ -1,3 +1,8 @@
+import factoryMethod.Database
+import factoryMethod.File
+import factoryMethod.Server
+import factoryMethod.StorageFactory
+
 //import builder.*
 
 fun main(args: Array<String>) {
