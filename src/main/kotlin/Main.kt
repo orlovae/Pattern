@@ -1,5 +1,3 @@
-import factoryMethod.*
-
 //import builder.*
 
 fun main(args: Array<String>) {
