@@ -1,3 +1,5 @@
+import factoryMethod.*
+
 //import builder.*
 
 fun main(args: Array<String>) {
@@ -40,5 +42,22 @@ fun main(args: Array<String>) {
 //            "\nmeat (type is " +
 //            "${foodOrder.meat?.type}, " +
 //            "weight = ${foodOrder.meat?.weight})" )
+
+    /*Testing factory metod*/
+
+    val configDb = Database("MnogoDB", "47")
+    val database = StorageFactory.getStorage(configDb)
+    database.getItem(15)
+    database.saveItem("Item from ${database.getNameStorage()} is Item(457)")
+
+    val configFile = File("/root/etc", "log.txt")
+    val file = StorageFactory.getStorage(configFile)
+    file.getItem(15)
+    file.saveItem("Line from ${file.getNameStorage()} is Line(3)")
+
+    val configServer = Server("http://ya.ru", "80")
+    val server = StorageFactory.getStorage(configServer)
+    server.getItem(15)
+    server.saveItem("Item from ${server.getNameStorage()} is 01.txt")
 
 }
